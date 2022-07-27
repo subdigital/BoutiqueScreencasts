@@ -2,6 +2,7 @@ import Boutique
 import SwiftUI
 import Combine
 import Models
+import Stores
 
 @MainActor
 public final class EpisodeDetailController: ObservableObject {
