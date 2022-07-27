@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Stores
 
 @main
 struct BoutiqueScreencastsApp: App {

@@ -1,19 +1,19 @@
-//
-//  ContentView.swift
-//  BoutiqueScreencasts
-//
-//  Created by Ben Scheirman on 6/25/22.
-//
-
 import SwiftUI
+import App
+import EpisodesListComponent
+import Stores
+import Boutique
 
 struct ContentView: View {
+    @StateObject var appController = AppController()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            EpisodesList(controller: appController.episodesController)
+                .navigationTitle("Episodes")
+        }
+        .task {
+            await appController.start()
         }
     }
 }

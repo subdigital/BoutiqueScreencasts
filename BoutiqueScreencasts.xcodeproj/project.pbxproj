@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5164BCA28678619009EE4BB /* App in Frameworks */ = {isa = PBXBuildFile; productRef = B5164BC928678619009EE4BB /* App */; };
 		B55BC17A286780850056AD35 /* BoutiqueScreencastsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BC179286780850056AD35 /* BoutiqueScreencastsApp.swift */; };
 		B55BC17C286780850056AD35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55BC17B286780850056AD35 /* ContentView.swift */; };
 		B55BC17E286780860056AD35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55BC17D286780860056AD35 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		B55BC17B286780850056AD35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B55BC17D286780860056AD35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B55BC180286780860056AD35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B55BC18F2867851B0056AD35 /* App */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = App; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +28,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5164BCA28678619009EE4BB /* App in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B5164BC828678619009EE4BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B55BC16D286780850056AD35 = {
 			isa = PBXGroup;
 			children = (
+				B55BC18F2867851B0056AD35 /* App */,
 				B55BC178286780850056AD35 /* BoutiqueScreencasts */,
 				B55BC177286780850056AD35 /* Products */,
+				B5164BC828678619009EE4BB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +93,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				B5164BC72867860E009EE4BB /* PBXTargetDependency */,
 			);
 			name = BoutiqueScreencasts;
+			packageProductDependencies = (
+				B5164BC928678619009EE4BB /* App */,
+			);
 			productName = BoutiqueScreencasts;
 			productReference = B55BC176286780850056AD35 /* BoutiqueScreencasts.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +159,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5164BC72867860E009EE4BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = B5164BC62867860E009EE4BB /* App */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B55BC182286780860056AD35 /* Debug */ = {
@@ -339,6 +362,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5164BC62867860E009EE4BB /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+		B5164BC928678619009EE4BB /* App */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = App;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B55BC16E286780850056AD35 /* Project object */;
 }
